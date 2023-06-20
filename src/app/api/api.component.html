@@ -1,0 +1,24 @@
+<!-- <button (click)="getuserdata()">Getdata</button>
+<div *ngFor="let item of usersdata">
+    <h2>{{item.name}}</h2>
+    <h2>{{item.email}}</h2>
+</div> -->
+
+<table class="table mt-4">
+    <thead>
+        <tr style="background-color:antiquewhite;">
+        <th>Userid</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Completed</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of usersdata" style="background-color:silver;">
+<td class="td">{{user.userId}}</td>
+<td>{{user.id}}</td>
+<td>{{user.title}}</td>
+<td>{{user.completed}}</td>
+        </tr>
+    </tbody>
+</table>

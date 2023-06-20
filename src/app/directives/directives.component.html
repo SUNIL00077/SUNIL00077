@@ -1,0 +1,82 @@
+ <!-- <button (click)="btnclick()">Click me</button>            component directive  -->
+ <div [ngStyle]="{'color':'red','font-weight':'bold'}">This is ng style Example</div>
+
+ <!-- //*ngIf -->
+ <div *ngIf="display==='white'">asdfghj</div>
+ <div *ngIf="value">it is show or hide boolean wise</div>
+ <div *ngIf="sunil,else elsepart">This is *ngIf Example</div>
+ <ng-template #elsepart>
+    <h1>This is else atribute</h1>
+ </ng-template>
+
+ <!-- *ngFor  for showing the index-->
+ <!-- <div *ngFor="let fruit of fruits, index as i">
+<h1>{{i}} {{fruit}}</h1>
+ </div> -->
+
+ <!-- for showing the index wise value -->
+ <!-- <div *ngFor="let fruit of fruits, last as l">
+    <h4>{{l}}  {{fruit}}</h4>
+ </div> -->
+
+ <!-- <div *ngFor="let fruit of fruits, first as s">
+    <h3>{{s}} {{fruit}}</h3>
+ </div> -->
+<!--
+ <div *ngFor="let fruit of fruits, odd as o">
+    <h2>{{o}} {{fruit}}</h2>
+ </div> -->
+
+ <!-- <div *ngFor="let fruit of fruits,even as e">
+    <h6>{{e}}  {{fruit}}</h6>
+ </div> -->
+
+
+ <!-- *ngFor for array of object -->
+ <!-- <div *ngFor="let data of persons,index as i">
+    <h1>{{i}}</h1>
+    <h2>{{data.name}}</h2>
+    <h3>{{data.age}}</h3>
+    <h4>{{data.ismarried}}</h4><br>
+ </div> -->
+
+ <!-- *ngFor for nested arrya of object -->
+ <!-- <ul *ngFor="let p of persons">
+    <li>{{p.name}}</li>
+    <li>{{p.age}}</li>
+    <li>{{p.ismarried}}</li>
+<ul *ngFor="let h of p.hobbies">
+    <li>{{h}}</li>
+</ul>
+ </ul> -->
+
+
+ <select (change)="setvalue($event)">
+   <option value="">Select</option>
+   <option value="one">One</option>
+   <option value="two">Two</option>
+   <option value="three">Three</option>
+   <option value="another">another</option>
+ </select>
+ <div [ngSwitch]="choose">
+   <h2 *ngSwitchCase="'one'">FIrst</h2>
+   <h2 *ngSwitchCase="'two'">second</h2>
+   <h2 *ngSwitchCase="'three'">third</h2>
+   <h2 *ngSwitchDefault>please select</h2>
+ </div>
+
+ <!-- <select (change)="selectvalue($event)">
+   <option value="">select</option>
+   <option value="one">one</option>
+   <option value="two">two</option>
+   <option value="three">three</option>
+   <option value="four">four</option>
+   <option value="another">select</option>
+ </select>
+ <div [ngSwitch]="name">
+   <h3 *ngSwitchCase="'one'">first number</h3>
+   <h3 *ngSwitchCase="'two'">second number</h3>
+   <h3 *ngSwitchCase="'three'">third number</h3>
+   <h3 *ngSwitchCase="'four'">four number</h3>
+   <h1 *ngSwitchDefault>not found</h1>
+ </div> -->

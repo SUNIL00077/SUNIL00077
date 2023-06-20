@@ -1,0 +1,51 @@
+
+
+.bg{
+    background-color: aliceblue;
+}
+.class-center{
+    background-color: aqua;
+}
+.container {
+  position: absolute;
+  margin: 20px;
+}
+.bg-img {
+    background-image: url('../../assets/image.png');
+    min-height: 620px;
+    background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .margin{
+    margin-top: 8%;
+    align-items: center;
+  }
+  .bg-wel{
+    background-color: burlywood;
+    height: 50px;
+  }
+  .form-group{
+    margin-left: 08%;
+    margin-right: 08%;
+  }
+
+
+  /* form{
+    padding-top: 50px;
+    text-align: center;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+  }
+  button{
+    width: 100%;
+  }
+ #para
+{
+ color: red;
+} */
